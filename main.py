@@ -73,7 +73,7 @@ options = webdriver.FirefoxOptions()
 options.headless = False
 options.add_argument(f"user-agent={user_agent}")
 driver = webdriver.Firefox(
-    executable_path=r"E:\Projects\PythonProjects\TennisReservation\geckodriver.exe",
+    executable_path="geckodriver",
     options=options,
 )
 driver.maximize_window()
@@ -216,9 +216,9 @@ def reservation():
                     i += 1
 
                 # Click reserve and send email to user with time and date of reservation
-                submit_button.click()
-                time.sleep(10)
-                send_email(body)
+                # submit_button.click()
+                # time.sleep(10)
+                # send_email(body)
 
             else:
                 day_text = friday.strftime("%A")

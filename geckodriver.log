@@ -1,0 +1,351 @@
+1631822080713	geckodriver	INFO	Listening on 127.0.0.1:62315
+1631822083752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows NT 6.2;en-US) AppleWebKit/537.32.36 (KHTML, live Gecko) Chrome/53.0.3036.83 Safari/537.32" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileydpvNr"
+1631822084186	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileydpvNr\\search.json.mozlz4", (void 0)))
+1631822086755	Marionette	INFO	Listening on port 62323
+1631822086933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631822110220	Marionette	INFO	Stopped listening on port 62323
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631856903416	geckodriver	INFO	Listening on 127.0.0.1:49213
+1631856906489	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "user-agent=Windows / Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202 Safari/537.36" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileHrcvfK"
+*** You are running in headless mode.
+1631856908089	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileHrcvfK\\search.json.mozlz4", (void 0)))
+1631856911109	Marionette	INFO	Listening on port 49221
+1631856911365	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631856949439	Marionette	INFO	Stopped listening on port 49221
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631857053169	geckodriver	INFO	Listening on 127.0.0.1:49391
+1631857056244	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.45 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.45" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofilelNr5Q7"
+1631857056868	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofilelNr5Q7\\search.json.mozlz4", (void 0)))
+1631857060402	Marionette	INFO	Listening on port 49400
+1631857060467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631857106372	Marionette	INFO	Stopped listening on port 49400
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631858247938	geckodriver	INFO	Listening on 127.0.0.1:57553
+1631858251027	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/6.0 Safari/537.36" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileCDMPWc"
+*** You are running in headless mode.
+1631858251678	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileCDMPWc\\search.json.mozlz4", (void 0)))
+1631858253488	Marionette	INFO	Listening on port 57310
+1631858253705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+537.22" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileOWjE8Z"
+*** You are running in headless mode.
+1631858300094	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileOWjE8Z\\search.json.mozlz4", (void 0)))
+1631858301887	Marionette	INFO	Listening on port 54838
+1631858302126	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631858827521	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+e/70.0.3538.102 Safari/537.36 Avast/70.0.917.102" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileA7awn9"
+1631858433953	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileA7awn9\\search.json.mozlz4", (void 0)))
+1631858437577	Marionette	INFO	Listening on port 57267
+1631858438051	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631858517267	Marionette	INFO	Stopped listening on port 57267
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x690023,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+1631858520001	geckodriver	INFO	Listening on 127.0.0.1:57306
+1631858523120	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.35 (KHTML, like Gecko) Chrome/27.0.1453.0 Safari/537.35" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileRHxaG4"
+1631858523964	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileRHxaG4\\search.json.mozlz4", (void 0)))
+1631858527207	Marionette	INFO	Listening on port 54627
+1631858527390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631858559709	Marionette	INFO	Stopped listening on port 54627
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631859737246	geckodriver	INFO	Listening on 127.0.0.1:54665
+1631859740313	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows; U; Windows 95) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.43 Safari/535.1" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileW4nVvt"
+1631859740876	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileW4nVvt\\search.json.mozlz4", (void 0)))
+1631859744108	Marionette	INFO	Listening on port 62446
+1631859744515	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1631859869832	Marionette	INFO	Stopped listening on port 62446
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390142,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631860254439	geckodriver	INFO	Listening on 127.0.0.1:53652
+1631860257534	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1.17) Gecko/20110121 AskTbLMW2/3.14.1.20007 Firefox/3.5.17 (.NET CLR 3.5.30729)" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileJO3mPH"
+1631860258009	Marionette	INFO	Marionette enabled
+ConvertWinError received an unrecognized WinError: 0x7b
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileJO3mPH\\search.json.mozlz4", (void 0)))
+1631860261308	Marionette	INFO	Listening on port 53660
+1631860261729	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631860674471	Marionette	INFO	Stopped listening on port 53660
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  Message: TypeError: NetworkError when attempting to fetch resource.
+console.warn: services.settings: security-state/intermediates sync interrupted by shutdown
+console.warn: services.settings: security-state/cert-revocations sync interrupted by shutdown
+console.warn: services.settings: security-state/onecrl sync interrupted by shutdown
+1631873302272	geckodriver	INFO	Listening on 127.0.0.1:61756
+1631873305457	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows NT 5.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileGiv5LH"
+1631873306349	Marionette	INFO	Marionette enabled
+ConvertWinError received an unrecognized WinError: 0x7b
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileGiv5LH\\search.json.mozlz4", (void 0)))
+1631873309740	Marionette	INFO	Listening on port 61764
+1631873309808	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_e82d9adf3bd2feeccf4f68cc0aa6c857/public/cache/Ca_Asset_Proui_b491b021bd880cc16544f37ae6f54779.js, line 6: ReferenceError: jQuery is not defined
+JavaScript error: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_d81211cbdb58c87a83be3c8292ec2aea/public/cache/Ca_Asset_Controls_228798136805faf8b345334672bcfced.js, line 194: ReferenceError: jQuery is not defined
+JavaScript error: https://gtc.clubautomation.com/, line 73: ReferenceError: $j is not defined
+JavaScript error: https://gtc.clubautomation.com/, line 189: ReferenceError: $j is not defined
+JavaScript error: https://gtc.clubautomation.com/, line 668: ReferenceError: $ is not defined
+1631873417647	Marionette	INFO	Stopped listening on port 61764
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1631873421955	geckodriver	INFO	Listening on 127.0.0.1:61689
+1631873425000	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows NT 5.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileKlJxco"
+1631873425430	Marionette	INFO	Marionette enabled
+ConvertWinError received an unrecognized WinError: 0x7b
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileKlJxco\\search.json.mozlz4", (void 0)))
+1631873428013	Marionette	INFO	Listening on port 61698
+1631873428199	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631873452223	Marionette	INFO	Stopped listening on port 61698
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631874193982	geckodriver	INFO	Listening on 127.0.0.1:53632
+1631874197052	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17) Gecko/20120427 Firefox/17.0.11" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileyhgLf4"
+1631874197453	Marionette	INFO	Marionette enabled
+ConvertWinError received an unrecognized WinError: 0x7b
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofileyhgLf4\\search.json.mozlz4", (void 0)))
+1631874200184	Marionette	INFO	Listening on port 53640
+1631874200272	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1631874238831	Marionette	INFO	Stopped listening on port 53640
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632236680946	geckodriver	INFO	Listening on 127.0.0.1:58869
+1632236684122	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "user-agent=Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1" "-no-remote" "-profile" "C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofilesehekh"
+1632236685238	Marionette	INFO	Marionette enabled
+ConvertWinError received an unrecognized WinError: 0x7b
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ghaza\\AppData\\Local\\Temp\\rust_mozprofilesehekh\\search.json.mozlz4", (void 0)))
+1632236688785	Marionette	INFO	Listening on port 58877
+1632236688971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+JavaScript warning: https://dydmmndmurd7x.cloudfront.net/l_19aab5a42e79383b96694d120bbe011c/assets/v_0833902cab862db919132ffc5ff84cb5/public/cache/Ca_Asset_Default_9c401fbdacea32c0e9e7059c7046f481.js, line 23: unreachable code after return statement
+1632236715548	Marionette	INFO	Stopped listening on port 58877
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390118,name=PContent::Msg_RecordDiscardedData) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

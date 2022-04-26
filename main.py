@@ -276,7 +276,6 @@ def reservation():
     # Click the confirm button to confirm the booking
     try:
         wait_for_element_by_id("confirm",wait).click()
-        time.sleep(10)
     except:
         print("Unable to finish invoice submission")
         return
@@ -291,3 +290,8 @@ def reservation():
     return
 
 reservation()
+
+try:
+    driver.close()
+except:
+    print("Already closed")

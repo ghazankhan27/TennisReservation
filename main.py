@@ -18,12 +18,12 @@ def next_weekday(d, weekday):
     days_ahead = weekday - d.weekday()
     if days_ahead <= 0: # Target day already happened this week
         days_ahead += 7
-    return d + datetime.timedelta(days_ahead)
+    return d + datetime.timedelta(days_ahead+7)
 
 def send_email(x):
     try:
         from_address = creds.from_email
-        to_address = "ghazankhan27@hotmail.com" # creds.email
+        to_address = creds.email
         subject = "Tennis Reservation"
         body = x
         msg = EmailMessage()
@@ -223,7 +223,6 @@ def reservation():
         date_in_format = next_weekday(date_full, 2).strftime('%x')
         date_field.clear()
         date_field.send_keys(date_in_format)
-
 
     except:
         print("Could not find the date picker.")

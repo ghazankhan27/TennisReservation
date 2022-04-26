@@ -1,3 +1,4 @@
+from pkg_resources import require
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
@@ -11,21 +12,27 @@ from selenium.webdriver.support.ui import Select
 import datetime
 import smtplib
 from email.message import EmailMessage
+import creds
 
+def next_weekday(d, weekday):
+    days_ahead = weekday - d.weekday()
+    if days_ahead <= 0: # Target day already happened this week
+        days_ahead += 7
+    return d + datetime.timedelta(days_ahead)
 
 def send_email(x):
     try:
-        from_address = "gtc.Clubautomation@gmail.com"
-        to_address = "david.hahn@gmail.com"
+        from_address = creds.from_email
+        to_address = "ghazankhan27@hotmail.com" # creds.email
         subject = "Tennis Reservation"
         body = x
         msg = EmailMessage()
-        msg["Subject"] = "Tennis Reservation"
+        msg["Subject"] = subject
         msg["From"] = from_address
         msg["To"] = to_address
         msg.set_content(body)
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login(from_address, "clubautomation1234")
+        server.login(from_address, creds.from_password)
         server.send_message(msg)
     except Exception as e:
         print(e)
@@ -49,6 +56,17 @@ def wait_for_element_by_id(id, time):
         )
         return element
     except Exception as e:
+        print(e)
+        return None
+
+def wait_for_element_by_class(class_name, time):
+    try:
+        element = WebDriverWait(driver, time).until(
+            EC.presence_of_element_located((By.CLASS_NAME, class_name))
+        )
+        return element
+    except Exception as e:
+        print(e)
         return None
 
 
@@ -70,10 +88,10 @@ wait = 10
 user_agent = get_random_user_agent()
 
 options = webdriver.FirefoxOptions()
-options.headless = False
+options.headless = True
 options.add_argument(f"user-agent={user_agent}")
 driver = webdriver.Firefox(
-    executable_path=r"E:\Projects\PythonProjects\TennisReservation\geckodriver.exe",
+    executable_path="geckodriver",
     options=options,
 )
 driver.maximize_window()
@@ -83,195 +101,194 @@ action = ActionChains(driver)
 body = ""
 friday = ""
 
+preferred_times = ["11:30am", "11:00am", "12:00pm"]
 
 def reservation():
     # Get the website
     driver.get("https://gtc.clubautomation.com/")
 
     # Wait for login form to appear
-    wait_for_element_by_id("signin_login_form", wait)
+    try:
+        wait_for_element_by_id("caSignInLoginForm", wait)
+    except:
+        print("Did not find the login form.")
+        return
 
     # Input the username/email
-    input_username = driver.find_element_by_xpath(
-        "//form[@id='signin_login_form']//input[@value='Username']"
-    )
-    input_username.send_keys("david.hahn@gmail.com")
+    try:
+        driver.find_element(By.ID,"login").send_keys(creds.email)
+    except:
+        print("Error inputting the email.")
+        return
 
-    # Find the password field
-    password_text = driver.find_element_by_id("password-text")
-    ActionChains(driver).move_to_element(password_text).click().perform()
 
     # Input password into the password field
-    driver.find_element_by_id("password").send_keys("Strategos4!")
+    try:
+        driver.find_element(By.ID,"password").send_keys(creds.password)
+    except:
+        print("Error inputting password.")
+        return
+
+    
 
     # Click the submit button
-    driver.find_element_by_xpath("//div[@class='buttons-group-wrapper']//a[2]").click()
+    try:
+        driver.find_element(By.ID,"loginButton").click()
+    except:
+        print("Unable to submit creds.")
+        return
 
     # Wait for side bar to load
-    wait_for_element_by_id("left_sidebar", wait)
+    try:
+        wait_for_element_by_id("left_sidebar", wait)
+    except:
+        print("Unable to find sidebar.")
+        return
 
     # Go to reserve a court menu
-    driver.find_element_by_id("menu_reserve_a_court").click()
+    try:
+        driver.find_element(By.ID,"menu_reserve_a_court").click()
+    except:
+        print("Unable to find reserve a court menu in side bar.")
+        return
+
+    
 
     # Wait for reservation page to load
-    wait_for_element_by_id("reserve-court-filter", wait)
+    try:
+        wait_for_element_by_id("reserve-court-filter", wait)
+    except:
+        print("Unable to find search form.")
+        return
 
-    # Scroll to the bottom of the page
-    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-    # Choose the time interval 60
-    time_intervals = driver.find_element_by_class_name(
-        "l-block"
-    ).find_elements_by_tag_name("label")
-    time_interval = time_intervals[2]
-    ActionChains(driver).move_to_element(time_interval).click().perform()
 
-    # Open the date picker
-    driver.find_element_by_class_name("ca-date-picker-field").click()
-    weeks = driver.find_element_by_class_name(
-        "datepickerDays"
-    ).find_elements_by_tag_name("tr")
+    # Click the location drop down
+    try:
+        driver.find_element(By.ID,"location_chosen").click()
+    except:
+        print("Could not click location picker")
+        return
 
-    # Calculate the date we want to choose
-    today = datetime.date.today()
-    friday = today + datetime.timedelta((4 - today.weekday()) % 7 + 7)
+    
+    # Select the location
+    try:
+        lis = driver.find_element(By.ID,"location_chosen").find_element(By.CLASS_NAME,'chosen-results').find_elements(By.TAG_NAME,'li')
+        selected_elem = None
+        for li in lis:
+            if li.text == "Tennis":
+                selected_elem = li
+                break
+        
+        if selected_elem == None:
+            return
+        
+        selected_elem.click()
+    except:
+        print("Couldnt click location as Tennis")
+        return
 
-    # Choose the correct date from datepicker
-    for week in weeks:
-        dates = week.find_elements_by_tag_name("td")
+    
+    # Find the list of time intervals
+    try:
+        labels = driver.find_element(By.CLASS_NAME,"l-block").find_elements(By.TAG_NAME, "label")
+        # Clicking on the correct time i.e 60 minutes
+        required_time_elem = None
+        
+        for label in labels:
+            if label.text == "60 Min":
+                required_time_elem = label
+                break
+            
+        ActionChains(driver).move_to_element(required_time_elem).click().perform()     
+        
+        if required_time_elem == None:
+            print("60 minute not found")
+            return
+        
+    except:
+        print("Could not find time values.")
+        return
+    
 
-        for date in dates:
-            my_date = str(date.find_element_by_tag_name("span").text)
-            if my_date == str(friday.day):
-                required_date = date
+
+    # Find the date field
+    try:
+        date_field = driver.find_element(By.ID, "date")
+
+
+        # Calculate the date required for booking
+        date_full = datetime.datetime.now()
+
+        date_in_format = next_weekday(date_full, 2).strftime('%x')
+        date_field.clear()
+        date_field.send_keys(date_in_format)
+
+
+    except:
+        print("Could not find the date picker.")
+        return
+
+    
+    
+
+
+    # Find the search button
+    try:
+        driver.find_element(By.ID, "reserve-court-search").click()
+    except:
+        print("Could not find and click the search button")
+        return
+
+
+    # Get all the the available time slots
+    try:
+        all_times_available = wait_for_element_by_id("times-to-reserve", wait).find_elements(By.TAG_NAME, "a")
+
+
+        # Choose the preferred time slot from the list available
+        chosen_time = None
+
+        for time in preferred_times:
+            for t in all_times_available:
+                if time == t.text:
+                    chosen_time = t
+                    break
+
+            if chosen_time != None:
                 break
 
-    ActionChains(driver).move_to_element(required_date).click().perform()
+        chosen_time.click()
 
-    # Click the search button
-    driver.find_element_by_id("reserve-court-search").click()
-
-    # Wait for available options
-    tennis_reserve_times = wait_for_element_by_id("times-to-reserve", wait)
-
-    # If times are available then choose the preferred time
-    if tennis_reserve_times != None:
-
-        tennis_reserve_times = tennis_reserve_times.find_elements_by_tag_name("td")
-        times = ""
-
-        for t in tennis_reserve_times:
-            x = t.find_element_by_tag_name("b").text
-
-            if x == "Tennis":
-                times = t.find_elements_by_tag_name("a")
-
-        if times != "":
-
-            required_time = ""
-            found = False
-
-            my_pr_list = [0, 0, 0]
-
-            for t in times:
-
-                x = t.text
-
-                if "8:30am" in x:
-                    my_pr_list.insert(0, t)
-                    found = True
-                elif "8:00am" in x:
-                    my_pr_list.insert(1, t)
-                    found = True
-                elif "9:00am" in x:
-                    my_pr_list.insert(2, t)
-                    found = True
-                else:
-                    next
-
-            if found:
-                for i in my_pr_list:
-                    if i != 0:
-                        required_time = i
-                        break
-                required_time.click()
-                submit_button = wait_for_element_by_id("confirm", wait)
-                msg_items = (
-                    driver.find_element_by_id("confirm-reservation-popup")
-                    .find_element_by_class_name("content")
-                    .find_elements_by_tag_name("tr")
-                )
-                body = "Reserved:\n"
-                i = 0
-
-                for msg_item in msg_items:
-                    if i != 2:
-                        x = str(msg_item.find_element_by_tag_name("th").text)
-                        body += x + " : "
-                        y = str(msg_item.find_element_by_tag_name("td").text)
-                        body += y + "\n"
-                    else:
-                        i += 1
-                        next
-                    i += 1
-
-                # Click reserve and send email to user with time and date of reservation
-                submit_button.click()
-                time.sleep(10)
-                send_email(body)
-
-            else:
-                day_text = friday.strftime("%A")
-                day = friday.day
-                month = friday.strftime("%B")
-                year = friday.year
-                mail_body = (
-                    "No reservation available for : "
-                    + day_text
-                    + " "
-                    + str(day)
-                    + ", "
-                    + str(month)
-                    + ", "
-                    + str(year)
-                )
-                send_email(mail_body)
-
-        else:
-            day_text = friday.strftime("%A")
-            day = friday.day
-            month = friday.strftime("%B")
-            year = friday.year
-            mail_body = (
-                "No reservation available for : "
-                + day_text
-                + " "
-                + str(day)
-                + ", "
-                + str(month)
-                + ", "
-                + str(year)
-            )
-            send_email(mail_body)
-
-    else:
-        day_text = friday.strftime("%A")
-        day = friday.day
-        month = friday.strftime("%B")
-        year = friday.year
+    except:
         mail_body = (
             "No reservation available for : "
-            + day_text
-            + " "
-            + str(day)
-            + ", "
-            + str(month)
-            + ", "
-            + str(year)
+            + date_in_format
         )
         send_email(mail_body)
 
-    driver.close()
+        print("Unable to find times")
+        return
 
+
+    
+
+
+    # Click the confirm button to confirm the booking
+    try:
+        wait_for_element_by_id("confirm",wait).click()
+        time.sleep(10)
+    except:
+        print("Unable to finish invoice submission")
+        return
+    
+
+    mail_body = "Booking confirmed for: " + date_in_format + " at " + chosen_time.text
+
+    send_email(mail_body)
+
+
+    driver.close()
+    return
 
 reservation()

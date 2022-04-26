@@ -1,6 +1,6 @@
 from pkg_resources import require
 from selenium import webdriver
-import time
+from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -275,7 +275,12 @@ def reservation():
 
     # Click the confirm button to confirm the booking
     try:
-        wait_for_element_by_id("confirm",wait).click()
+        submit_button = wait_for_element_by_id("confirm",wait)
+        print(submit_button.get_attribute("value"))
+        print(submit_button)
+        sleep(5)
+
+        submit_button.click()
     except:
         print("Unable to finish invoice submission")
         return

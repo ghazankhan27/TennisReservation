@@ -1,3 +1,4 @@
+from random import random
 from pkg_resources import require
 from selenium import webdriver
 from time import sleep
@@ -35,8 +36,8 @@ def send_email(x):
         server.login(from_address, creds.from_password)
         server.send_message(msg)
     except Exception as e:
+        print("Problem sending email")
         print(e)
-        driver.close()
 
 
 def wait_for_element_by_xpath(xpath, time):
@@ -46,7 +47,7 @@ def wait_for_element_by_xpath(xpath, time):
         )
         return element
     except Exception as e:
-        return None
+        print("Could not find element")
 
 
 def wait_for_element_by_id(id, time):
@@ -56,8 +57,7 @@ def wait_for_element_by_id(id, time):
         )
         return element
     except Exception as e:
-        print(e)
-        return None
+        print("Could not find element.")
 
 def wait_for_element_by_class(class_name, time):
     try:
@@ -66,18 +66,14 @@ def wait_for_element_by_class(class_name, time):
         )
         return element
     except Exception as e:
-        print(e)
-        return None
+        print("Could not find element.")
 
 
-def get_random_user_agent():
-    software_names = [SoftwareName.FIREFOX.value]
-    operating_systems = [OperatingSystem.WINDOWS.value]
+def random_agent():
+    software_names = [SoftwareName.CHROME.value]
+    operating_systems = [OperatingSystem.WINDOWS.value, OperatingSystem.LINUX.value] 
 
-    user_agent_rotator = UserAgent(
-        software_names=software_names, operating_systems=operating_systems, limit=100
-    )
-    user_agents = user_agent_rotator.get_user_agents()
+    user_agent_rotator = UserAgent(software_names=software_names, operating_systems=operating_systems, limit=100)
 
     user_agent = user_agent_rotator.get_random_user_agent()
     return user_agent
@@ -85,7 +81,7 @@ def get_random_user_agent():
 
 wait = 10
 
-user_agent = get_random_user_agent()
+user_agent = random_agent()
 
 options = webdriver.FirefoxOptions()
 options.headless = True
@@ -276,10 +272,7 @@ def reservation():
     # Click the confirm button to confirm the booking
     try:
         submit_button = wait_for_element_by_id("confirm",wait)
-        print(submit_button.get_attribute("value"))
-        print(submit_button)
         sleep(5)
-
         submit_button.click()
     except:
         print("Unable to finish invoice submission")

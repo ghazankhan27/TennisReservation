@@ -24,7 +24,7 @@ def next_weekday(d, weekday):
 def send_email(x):
     try:
         from_address = creds.from_email
-        to_address =  "ghazankhan27@hotmail.com" #creds.email
+        to_address =  creds.email
         subject = "Tennis Reservation"
         body = x
         msg = EmailMessage()
@@ -273,7 +273,7 @@ def reservation():
     try:
         submit_button = wait_for_element_by_id("confirm",wait)
         sleep(5)
-        # submit_button.click()
+        submit_button.click()
     except:
         print("Unable to finish invoice submission")
         return

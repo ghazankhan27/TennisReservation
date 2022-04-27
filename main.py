@@ -24,7 +24,7 @@ def next_weekday(d, weekday):
 def send_email(x):
     try:
         from_address = creds.from_email
-        to_address = creds.email
+        to_address =  "ghazankhan27@hotmail.com" #creds.email
         subject = "Tennis Reservation"
         body = x
         msg = EmailMessage()
@@ -33,7 +33,7 @@ def send_email(x):
         msg["To"] = to_address
         msg.set_content(body)
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login(from_address, creds.from_password)
+        server.login(from_address, creds.new_pass)
         server.send_message(msg)
     except Exception as e:
         print("Problem sending email")
@@ -273,7 +273,7 @@ def reservation():
     try:
         submit_button = wait_for_element_by_id("confirm",wait)
         sleep(5)
-        submit_button.click()
+        # submit_button.click()
     except:
         print("Unable to finish invoice submission")
         return
